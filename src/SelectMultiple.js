@@ -36,7 +36,7 @@ export function SelectMultiple({
 
   useEffect(() => {
     if (clearButton) {
-      setChecked([]); // Clear checked state when clearButton is true
+      setChecked([]);
     }
   }, [clearButton]);
 
@@ -44,7 +44,6 @@ export function SelectMultiple({
     setChecked([option]);
   };
 
-  console.log(filters.toString());
   return (
     <div style={{ margin: "20px 20px 20px 0" }}>
       <FormControl fullWidth>

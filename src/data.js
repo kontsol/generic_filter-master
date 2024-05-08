@@ -282,21 +282,73 @@ export const data = {
       magnitude: "Low",
     },
   ],
+  12: [
+    {
+      type: "Chemical change > Salt water intrusion",
+      probability: "Medium",
+      magnitude: "Medium",
+    },
+    {
+      type: "Chemical change > Ocean acidification",
+      probability: "High",
+      magnitude: "Medium",
+    },
+  ],
+  13: [
+    {
+      type: "Mass movement > Landslide",
+      probability: "Low",
+      magnitude: "Low",
+    },
+    {
+      type: "Mass movement > Avalanche",
+      probability: "High",
+      magnitude: "High",
+    },
+  ],
+  14: [
+    {
+      type: "Biological hazards > Air-borne disease",
+      probability: "High",
+      magnitude: "Medium",
+    },
+    {
+      type: "Biological hazards > Insect infestation",
+      probability: "Medium",
+      magnitude: "Medium",
+    },
+  ],
+  15: [
+    {
+      type: "Flood and sea level rise > Groundwater flood",
+      probability: "Medium",
+      magnitude: "Low",
+    },
+    {
+      type: "Flood and sea level rise > Permanent inundation",
+      probability: "High",
+      magnitude: "High",
+    },
+  ],
 };
 
 export const cities_coordinates = {
   18: { lat: 55.67613, lng: 12.56571 },
   159: { lat: 48.8787676, lng: 2.3222643 },
   163: { lat: 50.8705213, lng: 7.069748 },
-  1: { lat: 48.8566, lng: 2.3522 },
-  2: { lat: 52.52, lng: 13.405 },
+  1: { lat: 55.6761, lng: 12.5683 },
+  2: { lat: 48.8566, lng: 2.3522 },
   3: { lat: 51.5074, lng: -0.1278 },
-  4: { lat: 40.4168, lng: -3.7038 },
+  4: { lat: 52.52, lng: 13.405 },
   5: { lat: 41.9028, lng: 12.4964 },
   6: { lat: 52.3676, lng: 4.9041 },
   7: { lat: 48.2082, lng: 16.3738 },
   8: { lat: 50.0755, lng: 14.4378 },
   9: { lat: 37.9838, lng: 23.7275 },
-  10: { lat: 52.52, lng: 13.405 },
-  11: { lat: 48.8566, lng: 2.3522 },
+  10: { lat: 41.3851, lng: 2.1734 },
+  11: { lat: 59.3293, lng: 18.0686 },
+  12: { lat: 53.3498, lng: -6.2603 },
+  13: { lat: 47.3769, lng: 8.5417 },
+  14: { lat: 52.52, lng: 13.405 },
+  15: { lat: 59.3293, lng: 18.0686 },
 };

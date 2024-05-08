@@ -60,7 +60,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    // Function to filter cities based on selected filters
     if (
       typeFilters.length > 0 &&
       probabilityFilters.length > 0 &&
@@ -70,18 +69,19 @@ export default function App() {
         const filtered = {};
         Object.keys(data).forEach((cityId) => {
           const cityHazards = data[cityId];
+          console.log(cityHazards);
           const matchesType =
             typeFilters.length === 0 ||
-            cityHazards.some((hazard) => typeFilters.includes(hazard.type));
+            cityHazards.some((city) => typeFilters.includes(city.type));
           const matchesProbability =
             probabilityFilters.length === 0 ||
-            cityHazards.some((hazard) =>
-              probabilityFilters.includes(hazard.probability)
+            cityHazards.some((city) =>
+              probabilityFilters.includes(city.probability)
             );
           const matchesMagnitude =
             magnitudeFilters.length === 0 ||
-            cityHazards.some((hazard) =>
-              magnitudeFilters.includes(hazard.magnitude)
+            cityHazards.some((city) =>
+              magnitudeFilters.includes(city.magnitude)
             );
           if (matchesType && matchesProbability && matchesMagnitude) {
             filtered[cityId] = cities_coordinates[cityId];
@@ -131,7 +131,6 @@ export default function App() {
         color="secondary"
         onClick={clearResults}
         style={{
-          // width: "140px",
           height: "35px",
           margin: "35px",
           backgroundColor: "black",
